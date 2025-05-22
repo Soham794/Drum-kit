@@ -14,7 +14,7 @@ const keyboard = {
 }
 
 function makeSound(key){
-    var audio = new Audio("./sounds/"+map.get(key)+".mp3");
+    var audio = new Audio("sounds/"+map.get(key)+".mp3");
     audio.play();
 }
 
