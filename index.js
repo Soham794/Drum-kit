@@ -13,9 +13,8 @@ const keyboard = {
     "l" : "kick-bass", "k" : "crash",
 }
 
-
 function makeSound(key){
-    var audio = new Audio("/sounds/"+map.get(key)+".mp3");
+    var audio = new Audio("./sounds/"+map.get(key)+".mp3");
     audio.play();
 }
 
@@ -45,4 +44,3 @@ document.addEventListener("keydown",function(event){
     makeSound(event.key);
     animateOnClick(event.key);
 });
-
