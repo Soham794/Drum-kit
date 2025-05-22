@@ -41,6 +41,8 @@ for(let i=0;i<document.querySelectorAll(".drum").length;i++){
 document.addEventListener("keydown",function(event){
     // var audio = new Audio("./sounds/"+keyboard[key.key]+".mp3");
     // audio.play();
-    makeSound(event.key);
-    animateOnClick(event.key);
+    if(map.get(event.key)){
+        makeSound(event.key);
+        animateOnClick(event.key);
+    }
 });
