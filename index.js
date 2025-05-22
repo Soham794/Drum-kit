@@ -14,7 +14,7 @@ const keyboard = {
 }
 
 function makeSound(key){
-    var audio = new Audio("sounds/"+map.get(key)+".mp3");
+    var audio = new Audio("https://github.com/Soham794/Drum-kit/blob/master/sounds/"+map.get(key)+".mp3??raw=true");
     audio.play();
 }
 
